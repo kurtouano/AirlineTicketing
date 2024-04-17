@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.search-bar-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestions {
+    display: none;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 10px;
+    color: white;
+    font-family: "Mulish";
+    font-size: .9rem;
+    z-index: 100;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.explore-btn {
+    font-family: system-ui;
+    font-size: 20px;
+    padding: 5px 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(255, 193, 7);
+    border: 1px solid rgb(255, 193, 7);
+
+    transition: all 0.5s;
+}
+
+.explore-btn:hover {
+    color: rgb(25, 35, 45);
+    border: 1px solid rgb(25, 35, 45);
+    background-color: rgb(255, 193, 7);
+}
+
+.search::placeholder {
+    color: rgba(255, 255, 255, 0.438);
+}
+
+.landing-bg-color {
+    background-color: rgb(25, 35, 45);
+}
+
+.landing-bg-img {
+    position: relative;
+    z-index: 6;
+}
+
+.landing-bg-img {
+    z-index: 100;
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89.9vh;
+}
+
+.logo{
+    background-image: url(assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 32px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+.sub-title{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    margin-bottom: 25px;
+}
+
+.fly-text {
+    color: rgb(255, 193, 7);
+}  
+
+.landing-text {
+    color: rgb(255, 255, 255);
+    margin: 30px 0 30px 0;
+}
+
+#book {
+    scroll-margin-top: 45px;
+}
+
+.booking-container {
+    position: relative;
+    max-width: 700px;
+    height: 620px;
+    background-color: rgba(25, 35, 45, 0.9); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7% 26% 7% 26%;
+    border-radius: 20px;
+    padding: 35px 0;    
+}
+
+.booking-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    background: url(assets/booking-bg.png);
+    overflow: visible;
+    background-attachment: fixed;
+    background-position: 50%;
+    border-radius: 20px;
+}
+
+.booking-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.booking-text1 {
+    font-size: 20px;
+    color: white;
+    font-family: "Mulish";
+}
+
+.booking-text1 span {
+    color:rgb(255, 193, 7);
+    font-style:italic;
+}
+
+.booking-text2 {
+    font-size: 35px;
+    color: white;
+    font-family: "Playfair Display";
+}
+
+.booking-container form, .edit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 400px;
+  border-radius: 8px;
+  background-color: transparent;
+
+  font-family: 'Mulish';
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.booking-container label, .edit label{
+  flex: 1 1 100%;
+  margin-bottom: 8px;
+}
+
+.booking-container select, .date, .passengers, .edit select {
+    background-color: rgba(255, 255, 255, 0.132);
+    color: white;
+    border: 1px solid rgb(255,193,7);
+}
+
+.booking-container option, .edit option {
+    color: black;
+}
+
+.booking-container select, .booking-container input, .edit select, .edit input{
+  width: 100%;
+  padding: 8px;
+}
+
+.booking-container select, .date, .passengers {
+    margin-bottom: 15px;
+}
+
+.booking-container input[type="submit"], .edit input[type="submit"] {
+  background-color: rgb(255,193,7);
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-family: "Mulish";
+  font-size: 16px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.booking-container input[type="submit"]:hover, .edit input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.132);
+    color: rgb(255,193,7);
+    border: 1px solid rgb(255,193,7);
+}
+
+#about-us {
+    scroll-margin-top: 60px;
+}
+
+.about-us-bg {
+    background-image: url(assets/about-us-bg.png);
+    background-size: cover;
+    padding: 2% 0;
+    position: relative;
+    z-index: 5;
+}
+
+.about-us-bg::before {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-272deg, #19232d 15%, rgba(25, 25, 25, 0.62) 100%);
+    z-index: -2; /* Adjust the z-index to place the gradient above the image */
+}
+
+.about_content{
+    position: relative;
+    z-index: 5;
+}
+
+.about-us-bg :is(p, h1, h2, h3, h4, h5, h6) {
+    color: white;
+}
+
+.about_booknow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.call-book{
+    max-width: 50%;
+}
+
+.about_button{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
